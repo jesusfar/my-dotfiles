@@ -261,7 +261,8 @@ let g:vim_debug_disable_mappings = 1
 " add some useful mappings
 map <F5> :Dbg over<CR>
 map <F6> :Dbg into<CR>
-map <F7> :Dbg out<CR>
+"map <F7> :Dbg out<CR>
+map <F7> mzgg=G`z
 map <F8> :Dbg here<CR>
 map <F9> :Dbg break<CR>
 map <F10> :Dbg watch<CR>
