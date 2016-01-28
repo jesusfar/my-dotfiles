@@ -126,7 +126,8 @@ set softtabstop=4
 set shiftwidth=4
 
 " tab length exceptions on some file types
-autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+"autocmd FileType html setlocal shiftwidth=2 tabstop=2 softtabstop=2
+autocmd FileType html setlocal indentkeys-=*<Return>
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 
@@ -142,7 +143,7 @@ set hlsearch
 syntax on
 
 " show line numbers
-set nu
+set number
 
 " tab navigation mappings
 map tn :tabn<CR>
@@ -260,7 +261,8 @@ map <F2> :TaskList<CR>
 let g:vim_debug_disable_mappings = 1
 " add some useful mappings
 map <F5> :Dbg over<CR>
-map <F6> :Dbg into<CR>
+"map <F6> :Dbg into<CR>
+map <F6> : gg=G
 "map <F7> :Dbg out<CR>
 map <F7> mzgg=G`z
 map <F8> :Dbg here<CR>
