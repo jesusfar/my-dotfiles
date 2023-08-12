@@ -104,14 +104,10 @@ export ANDROID_HOME=$HOME/Android/Sdk
 export PATH=$PATH:/opt/gradle/gradle-6.0.1/bin
 export PATH=$PATH:$ANDROID_HOME
 
-export RHEL_VERSION=6
 if [ /snap/bin/kubectl ]; then source <(kubectl completion zsh); fi
 
 KUBECONFIG=$HOME/.kube/config
-KUBECONFIG=$KUBECONFIG:$HOME/workspace/gitlab.com/iway/k8s-config/tigo-eks-cluster
-KUBECONFIG=$KUBECONFIG:$HOME/workspace/gitlab.com/iway/configuration_manager/k8s-provisioning/inventory/k8s-dev/artifacts/admin.conf
-KUBECONFIG=$KUBECONFIG:$HOME/workspace/gitlab.com/iway/configuration_manager/k8s-provisioning/inventory/cijobs/artifacts/admin.conf
-KUBECONFIG=$KUBECONFIG:$HOME/workspace/gitlab.com/iway/k8s-config/scm.k8scluster
+#KUBECONFIG=$KUBECONFIG:$HOME/workspace/other-eks-config
 
 export KUBECONFIG=$KUBECONFIG
 
